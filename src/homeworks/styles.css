@@ -1,0 +1,13 @@
+.cards-wrapper {
+    padding: 20px;
+    font-size: Arial;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+   
+}
+
+.style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
