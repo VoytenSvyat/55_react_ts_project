@@ -16,7 +16,6 @@ function Homework07 () {
     ) 
     return (
         <div className="cards-wrapper">
-            <h1 className="list-of-products"/>
             <div className="style">
             {productCards}
         </div>
