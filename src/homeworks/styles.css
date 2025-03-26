@@ -1,0 +1,17 @@
+.cards-wrapper {
+    padding: 20px;
+    font-size: Arial;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+   
+}
+.list-of-products{
+    text-align: center;
+    color: #444;
+}
+
+.style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
