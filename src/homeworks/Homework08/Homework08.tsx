@@ -11,11 +11,11 @@ function Homework08() {
     }
 
     const showPasswordHandler = () => {
-        setShowPassword(!showPassword);
+        setShowPassword(true);
     }
 
     const hidePasswordHandler = () => {
-        setShowPassword((prev) => !prev);
+        setShowPassword(false);
     }
 
     return (
