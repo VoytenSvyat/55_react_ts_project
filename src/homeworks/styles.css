@@ -1,13 +1,11 @@
-.cards-wrapper {
-    padding: 20px;
-    font-size: Arial;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-   
-}
-
-.style {
+.homework07-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+    padding: 40px;
+    /* padding — это CSS-свойство, которое задает внутренние отступы элемента, 
+    то есть расстояние между его содержимым и границей (рамкой). */
+    background-color: aliceblue;
 }

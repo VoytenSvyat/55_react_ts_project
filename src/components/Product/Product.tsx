@@ -1,11 +1,11 @@
 import './styles.css'
 import ProductsProps from './types';
 
-function Product ({name, price}: ProductsProps) {
+function Product ({productName, productPrice}: ProductsProps) {
     return (
         <div className="products-card-container">
-            <h3 className="product-name">{name}</h3>
-            <p className="product-price">Price: ${price.toFixed(2)}</p>
+            <div className="product-name">Product: {productName}</div>
+            <div className="product-price">Price: ${productPrice.toFixed(2)}</div>
         </div>
     )
 
