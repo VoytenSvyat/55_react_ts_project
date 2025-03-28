@@ -17,7 +17,9 @@ export const BoxInfo = styled.div<BoxInfoStyledProps>`
     font-size: 24px;
 `;
 
-export const TitleCard = styled.h2``;
+export const TitleCard = styled.h2` 
+ color: #D5CBE8;
+ font-size: 50px;`;
 
 export const AvatarImg = styled.img`
  width: 100px;
