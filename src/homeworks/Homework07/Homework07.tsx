@@ -1,6 +1,6 @@
 import { v4 } from "uuid";
 
-import ProductCard from "../components/Product/Product";
+import ProductCard from "../../components/Product/Product";
 import { products } from "./Products";
 import './styles.css'
 import { Product } from "./types";

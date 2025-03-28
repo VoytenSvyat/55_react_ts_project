@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from "react"
 import Button from "../../components/Button/Button"
 import Input from "../../components/Input/Input"
+import './styles.css'
 
 function Homework08() {
     const [password, setPassword]= useState<string>('');
@@ -19,7 +20,7 @@ function Homework08() {
     }
 
     return (
-        <div>
+        <div className="homework08-container">
             <h1>Change password:</h1>
             <Input
                 name='passwordName'
@@ -32,7 +33,7 @@ function Homework08() {
             />
             <Button name='SHOW PASSWORD' onClick={showPasswordHandler}/>
             <Button name='HIDE PASSWORD' onClick={hidePasswordHandler}/>
-            {showPassword && <div>{password}</div>}
+            {showPassword && <div className="result-container">{password}</div>}
         </div>
     )
 }
