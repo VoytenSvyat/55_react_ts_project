@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 interface BoxCardStyledProps {
     primary?: boolean
   }
-  
+
   export const BoxCard = styled.div<BoxCardStyledProps>`
    display: flex;
    align-items: center;
@@ -22,16 +22,18 @@ margin: 10px;
 
 `;
 
-export const UserCard = styled.h2`
-font-size: 28px;
-margin: 10px;
-`;
+export const DescriptionCard = styled.h2`
+font-size: 20px;
+text-align: center;
+`
 
-export const DescriptionCard1 = styled.h2`
-font-size: 20px;
-text-align: center;
-`
-export const DescriptionCard2 = styled.h2`
-font-size: 20px;
-text-align: center;
-`
+export const CardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex: 1;
+  padding: 40px;
+  background-color: rgb(202, 154, 234);
+`;
