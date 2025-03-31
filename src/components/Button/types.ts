@@ -3,5 +3,6 @@ export interface ButtonProps {
     // void - если функция ничего не возвращает
     onClick?: () => void,
     disabled?: boolean ,
-    type?: 'submit' | 'button' | 'reset'
+    type?: 'submit' | 'button' | 'reset',
+    danger?: boolean
 }
