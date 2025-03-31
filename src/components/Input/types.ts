@@ -7,5 +7,6 @@ export interface InputProps {
     type?: 'text' | 'email' | 'number' | 'password' | 'tel',
     onChange?: (event: ChangeEvent<HTMLInputElement>) => void,
     label?: string,
-    id?: string
+    id?: string,
+    search?: boolean
 }
