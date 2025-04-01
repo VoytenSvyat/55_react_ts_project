@@ -1,14 +1,13 @@
 import Button from "../../components/Button/Button";
+import { Homework10Container } from "./styles";
 
 function Homework10() {
   return (
     <>
-      <div>
+      <Homework10Container>
         <Button name="Send" />
-      </div>
-      <div>
-        <Button danger name="Delete" />
-      </div>
+        <Button name="Delete" danger />
+      </Homework10Container>
     </>
   );
 }
