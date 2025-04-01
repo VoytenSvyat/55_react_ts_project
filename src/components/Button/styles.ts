@@ -14,5 +14,9 @@ export const MainButton = styled.button<ButtonStyledProps>`
     font-size: 26px;
     color: white;
     cursor: pointer;
+
+    &:disabled {
+      background: grey;
+    }
 `;
 
