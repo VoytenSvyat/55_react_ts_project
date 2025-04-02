@@ -16,13 +16,18 @@ function Homework11() {
    }
 
     useEffect(() => {
+        if(inputValue1) {
         setInputCount((prevValue) => prevValue + 1);
+    }
     }, [inputValue1])
     return (
             <Homework11Container>
-                <Input name='input1' value={inputValue1} onChange={changeFirstInputValue}/>
-                <Input name='input2' value={inputValue2} onChange={changeSecondInputValue}/>
-                <InputResult>Количество изменений: {inputCount === -1? '0' : inputCount}</InputResult>
+                <Input name='note' placeholder="Enter your note" value={inputValue1} onChange={changeFirstInputValue}/>
+                <InputResult>
+                Количество изменений в поле Note: {inputCount === -1? '0' : inputCount}
+                {/* Количество изменений в поле Note: {inputCount -1 } state = -1. -1 не показиваеться, вместо нее ми подставляем 0 */}
+                </InputResult>
+                <Input name='note_addition' placeholder="Enter your additional note" value={inputValue2} onChange={changeSecondInputValue}/>
             </Homework11Container>
     )
 }
