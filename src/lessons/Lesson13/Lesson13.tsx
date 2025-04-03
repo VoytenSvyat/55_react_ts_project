@@ -16,15 +16,6 @@ function Lesson13 () {
 
     const IMAGE_URL = 'https://dog.ceo/api/breeds/image/random';
 
-    const changeValue = (event: ChangeEvent<HTMLInputElement>) => {
-        setValue(event.target.value);
-    }
-
-    const deleteAllData = () => {
-        setImage([])
-        setIsLoading(true)
-    }
-
     const getImage = async () => {
         setError(undefined)
         try {
@@ -44,6 +35,15 @@ function Lesson13 () {
     useEffect(() => {
         getImage();
       }, [value])
+
+    const changeValue = (event: ChangeEvent<HTMLInputElement>) => {
+        setValue(event.target.value);
+    }
+
+    const deleteAllData = () => {
+        setImage([])
+        setIsLoading(true)
+    }
 
     return (
         <Lesson13Container>

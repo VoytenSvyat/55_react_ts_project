@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Lesson13Container = styled.div`
-   display: flex;
+display: flex;
 flex-direction: column;
 align-items: center;
 gap: 40px;
@@ -15,7 +15,8 @@ border: 1px solid #ccc;
 `;
 
 export const AnimalImage = styled.img`
-    max-width: 80%;
+    width: 500px;
+    height: 400px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
