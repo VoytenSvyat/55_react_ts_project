@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+import backImage from '../../assets/background-image.jpg';
+
 export const Homework12Container = styled.div`
 display: flex;
 flex-direction: column;
@@ -7,7 +9,9 @@ align-items: center;
 gap: 40px;
 flex: 1;
 padding: 60px;
-background-color: rgb(83, 241, 117);
+background-image: url(${backImage});
+background-position: center;
+background-size: cover;
 `;
 
 export const FactsWrapper = styled.div`

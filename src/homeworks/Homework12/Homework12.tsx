@@ -13,10 +13,11 @@ function Homework12 () {
 
     const getFact = async () => {
         setError(undefined)
+        setIsLoading(true)
         try {
-            setIsLoading(true)
+            
             const response = await axios.get(FACTS_URL)
-            setFact(`${response.data.fact}`)
+            setFact(response.data.fact)
         } catch (error: any) {
             setError(error.message)
         } finally {
