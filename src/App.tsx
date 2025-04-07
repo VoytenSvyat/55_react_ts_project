@@ -22,7 +22,8 @@ import GlobalStyles from "./styles/GlobalStyles";
 // import Homework09 from "./homeworks/Homework09/Homework09";
 // import Homework10 from "./homeworks/Homework10/Homework10";
 // import Homework11 from "./homeworks/Homework11/Homework11";
-// import Homework12 from "./homeworks/Homework12/Homework12";
+
+
 
 
 function App() {
@@ -45,8 +46,11 @@ function App() {
       {/* <Consultation05 /> */}
       {/* <Homework11/> */}
       {/* <Lesson12/> */}
-      {/* <Homework12/> */}
-    
+      
+
+
+
+      
     </>
   )
 }
