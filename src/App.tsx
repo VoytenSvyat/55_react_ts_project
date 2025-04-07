@@ -34,6 +34,8 @@ import GlobalStyles from "./styles/GlobalStyles";
 
 
 
+
+
 >>>>>>> main
 
 function App() {
