@@ -13,7 +13,7 @@ import GlobalStyles from "./styles/GlobalStyles";
 // import Lesson10 from "./lessons/Lesson10/Lesson10";
 // import Lesson11 from "./lessons/Lesson11/Lesson11";
 // import Lesson12 from "./lessons/Lesson12/Lesson12";
-// import Lesson14 from "./lessons/Lesson14/Lesson14";
+
 
 //Homeworks imports:
 // import Homework06 from "./homeworks/Homework06";
@@ -23,7 +23,7 @@ import GlobalStyles from "./styles/GlobalStyles";
 // import Homework10 from "./homeworks/Homework10/Homework10";
 // import Homework11 from "./homeworks/Homework11/Homework11";
 // import Homework12 from "./homeworks/Homework12/Homework12";
-import Homework14 from "./homeworks/Homework14/Homework14";
+
 
 function App() {
 
@@ -46,9 +46,7 @@ function App() {
       {/* <Homework11/> */}
       {/* <Lesson12/> */}
       {/* <Homework12/> */}
-      {/* <Consultation06/> */}
-      {/* <Lesson14 /> */}
-      <Homework14 />
+    
     </>
   )
 }
