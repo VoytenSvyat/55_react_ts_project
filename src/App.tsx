@@ -26,6 +26,13 @@ import GlobalStyles from "./styles/GlobalStyles";
 
 
 
+
+
+
+
+
+
+
 function App() {
 
   return (
@@ -43,6 +50,18 @@ function App() {
       {/* <Lesson10/>
       <Homework10/> */}
       {/* <Lesson11 /> */}
+
+
+
+
+
+
+
+
+
+
+
+      
 
     </>
   )
