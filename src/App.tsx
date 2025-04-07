@@ -20,11 +20,6 @@ import GlobalStyles from "./styles/GlobalStyles";
 // import Homework08 from "./homeworks/Homework08/Homework08";
 // import Homework09 from "./homeworks/Homework09/Homework09";
 
-
-
-
-
-
 function App() {
 
   return (
@@ -41,12 +36,6 @@ function App() {
       {/* <Homework09/> */}
       {/* <Lesson10/>
       <Homework10/> */}
-
-
-
-
-
-
     </>
   )
 }
