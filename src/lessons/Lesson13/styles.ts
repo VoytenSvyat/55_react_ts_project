@@ -8,11 +8,18 @@ gap: 40px;
 flex: 1;
 padding: 60px;
 background-color: rgb(245, 249, 250);
-/* overflow-y: scroll;
-height: 700px;  */
+// Для добавления scroll используем набор свойств
+// постоянна висота(height) и свойство overflow: auto;
+height: 700px; 
+overflow: auto;
 border: 1px solid #ccc;
 
 `;
+export const ButtonContainer = styled.div`
+display: flex;
+width: 500px;
+gap: 20px;
+`
 
 export const AnimalImage = styled.img`
     width: 500px;

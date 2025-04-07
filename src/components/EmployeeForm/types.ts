@@ -1,5 +1,7 @@
 export interface EmployeeFormValues {
    name: string,
-   age: number | string,
-   rulesAccepted: boolean
+   age: string,
+   rulesAccepted: boolean,
+   password: string,
+   code: string
   }

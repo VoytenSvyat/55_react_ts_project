@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const EmployeeFormComponent = styled.form`
  display: flex;
  flex-direction: column;
- gap: 30px;
+ gap: 10px;
  min-width: 600px;
  padding: 40px;
  background-color: whitesmoke;
