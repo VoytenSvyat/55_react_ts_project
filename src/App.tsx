@@ -43,14 +43,7 @@ function App() {
       {/* <Lesson10/>
       <Homework10/> */}
       {/* <Lesson11 /> */}
-      {/* <Consultation05 /> */}
-      {/* <Homework11/> */}
-      {/* <Lesson12/> */}
-      
 
-
-
-      
     </>
   )
 }
