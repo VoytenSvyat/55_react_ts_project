@@ -1,4 +1,4 @@
-export interface InputFormValues{
+export interface ValidationFormValues {
     validation_code: string,
     privacyPolicy: boolean
 }

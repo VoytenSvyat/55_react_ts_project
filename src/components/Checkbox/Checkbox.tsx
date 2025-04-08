@@ -1,29 +1,30 @@
-// import { CheckBoxContainer, LabelCheckBox } from "../EmployeeForm/styles";
-// import { Label } from "../Input/styles";
-// import { CheckboxProps } from "./types";
+import { CheckboxComponent, CheckboxContainer, CheckboxElement, CheckboxLabel, ErrorMessage } from "./styles";
+import { CheckboxProps } from "./types";
 
-// function Checkbox(
-//     // id,
-//     // name,
-//     // checked,
-//     // label,
-//     // onChange,
-//     // error
-//     //  ):CheckboxProps {
-//     // return (
-//     //     <CheckBoxContainer>
-//     //             <LabelCheckBox htmlFor={id}>
-//     //               <input
-//     //                 id={id}
-//     //                 name={name}
-//     //                 checked={checked}
-//     //                 onChange={onChange}
-//     //               />
-//     //               I agree privacy and policy
-//     //             </LabelCheckBox>
-//     //               <Label htmlFor={id}>{label} {error}</Label>
-//     //           </CheckBoxContainer>
-//     // )
-// }
-
-// export default Checkbox
+  function Checkbox({
+    name,
+    id,
+    checked,
+    onChange,
+    label,
+    error
+  }: CheckboxProps) {
+    return (
+      <CheckboxComponent>
+        <CheckboxContainer>
+          <CheckboxElement
+            name={name}
+            type='checkbox'
+            id={id}
+            checked={checked}
+            onChange={onChange}
+          />
+          <CheckboxLabel htmlFor={id}>
+            {label}
+          </CheckboxLabel>
+        </CheckboxContainer>
+        <ErrorMessage>{error}</ErrorMessage>
+      </CheckboxComponent>
+    )
+  }
+  export default Checkbox;

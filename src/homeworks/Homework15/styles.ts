@@ -7,24 +7,16 @@ export const Homework15Container = styled.div`
   justify-content: center;
   flex: 1;
   padding: 60px;
-  background-color: rgb(56, 244, 238);
+  background-color: rgb(232, 238, 197);
 `;
 
-export const CheckboxHomeworkContainer = styled.div`
+export const ValidationForm = styled.form`
  display: flex;
- align-items: center;
+ flex-direction: column;
  gap: 10px;
-`
-export const CheckboxHomework = styled.input`
- width: 25px;
- height: 25px;
-`
-export const CheckboxLabel = styled.label`
- font-size: 20px;
-`
-
-export const ErrorMessage = styled.div`
- height: 20px;
- font-size: 18px;
- color: red;
+ min-width: 600px;
+ padding: 40px;
+ background-color: whitesmoke;
+ border: 2px solid black;
+ border-radius: 6px;
 `

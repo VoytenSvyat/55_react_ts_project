@@ -1,3 +1,8 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Layout from "./components/Layout/Layout"
+import About from "./pages/About/About"
+import Home from "./pages/Home/Home"
 import GlobalStyles from "./styles/GlobalStyles"
 
 //Lessons imports
@@ -24,7 +29,7 @@ import GlobalStyles from "./styles/GlobalStyles"
 // import Homework11 from "./homeworks/Homework11/Homework11"
 // import Homework12 from "./homeworks/Homework12/Homework12"
 // import Homework14 from "./homeworks/Homework14/Homework14"
-import Homework15 from "./homeworks/Homework15/Homework15"
+// import Homework15 from "./homeworks/Homework15/Homework15"
 
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
@@ -34,29 +39,19 @@ import Homework15 from "./homeworks/Homework15/Homework15"
 function App() {
 
   return (
-    <>
+    //BrowserRouter - глобальная обертка для всего приложения, которая позволяет использовать маршрутизацию
+    <BrowserRouter>
       <GlobalStyles />
-      {/* <Task6 /> */}
-      {/* <Lesson06 /> */}
-      {/* <Homework06 /> */}
-      {/* <Lesson07 /> */}
-      {/* <Homework07/> */}
-      {/* <Lesson08/> */}
-      {/* <Consultation04 /> */}
-      {/* <Homework08 /> */}
-      {/* <Lesson09 /> */}
-      {/* <Homework09 /> */}
-      {/* <Lesson10 /> */}
-      {/* <Homework10 /> */}
-      {/* <Lesson11 /> */}
-      {/* <Homework11 /> */}
-      {/* <Lesson12 /> */}
-      {/* <Homework12 /> */}
-      {/* <Lesson14 /> */}
-      {/* <Lesson13 /> */}
-      {/* <Homework14 /> */}
-      <Homework15 />
-    </>
+      <Layout>
+        {/* Routes - обертка, которая собирает все маршрути приложения  */}
+        <Routes>
+        {/* Route - компонент библиотеки, в которий маршрут и тот компонент(страницу), 
+        которий должен бить визван, если виполнен переход по єтому маршруту */}
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<About />}/>
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   )
 }
 
