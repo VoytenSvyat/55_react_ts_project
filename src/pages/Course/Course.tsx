@@ -1,27 +1,17 @@
-import { CourseWrapper, Title, Topics, TopicsList } from "./styles"
+import { v4 } from "uuid"
+
+import { lessonsData } from "./data"
+import { CourseWrapper, ListItem, Title } from "./styles"
 
 function Course () {
+    const lessons = lessonsData.map((lesson: string)=> {
+        return <ListItem key={v4()}>{lesson}</ListItem>
+    })
     return (
         <CourseWrapper>
             <Title>React Lessons
             </Title>
-            <Topics>
-            <TopicsList>React: Props_and_State</TopicsList>
-            <TopicsList>React: Type_Script</TopicsList>
-            <TopicsList>React: Object_Types</TopicsList>
-            <TopicsList>React: Controlled_and_uncontrolled_components</TopicsList>
-            <TopicsList>React: Children</TopicsList>
-            <TopicsList>React: Styling_components</TopicsList>
-            <TopicsList>React: Global_Styles</TopicsList>
-            <TopicsList>React: useEffect</TopicsList>
-            <TopicsList>React: axios</TopicsList>
-            <TopicsList>React: server_requests</TopicsList>
-            <TopicsList>React: useEffect</TopicsList>
-            <TopicsList>React: Formik</TopicsList>
-            <TopicsList>React: Yup</TopicsList>
-            <TopicsList>React: Routing</TopicsList>
-            </Topics>
-            
+            {lessons}
         </CourseWrapper>
     )
 }

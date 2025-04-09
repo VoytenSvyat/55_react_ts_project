@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 
 export const LayoutComponent = styled.div`
 display: flex;
@@ -14,10 +15,22 @@ export const Header = styled.header`
  background-color: #F5B0Bc;
 `;
 
+export const LogoImage = styled.img`
+  width: 60px;
+  border-radius: 50%;
+`
+
 export const Nav = styled.nav`
 display: flex;
 gap: 15px;
 `;
+
+export const StyledNavLink = styled(NavLink)`
+ font-size: 24px;
+ color: #38121f;
+ font-weight: bold;
+ text-decoration: none;
+`
 
 export const Main= styled.main`
   display: flex;
@@ -29,10 +42,15 @@ export const Footer = styled.footer`
 display: flex;
 justify-content: center;
 align-items: center;
+gap: 30px;
 padding: 20px;
 background-color: #8a1e30;
 color: white;
 `;
+
+export const ButtonContainer = styled.div`
+ width: 75px;
+`
 
 export const LogoText = styled.div`
 font-size: 28px;
