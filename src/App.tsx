@@ -9,6 +9,10 @@ import Users from "./pages/Users/Users";
 import Designer from "./pages/Users/components/Designer/Designer";
 import Manager from "./pages/Users/components/Manager/Manager";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import Clients from "./pages/Clients/Clients";
+import Apple from "./pages/Clients/components/Apple/Apple";
+import McDonalds from "./pages/Clients/components/McDonald’s/McDonald’s";
+import Microsoft from "./pages/Clients/components/Microsoft/Microsoft";
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -60,6 +64,10 @@ function App() {
         <Route path="/users/manager" element={<Manager/>}/>
         {/* path='*' - специальний маршрут, которий визовет переданний компонент,  в том случае, если в маршрутах више 
         не будет найдено того маршрута, к которому обращаеться пользователь */}
+        <Route path="/clients" element={<Clients/>}/>
+        <Route path="/clients/apple" element={<Apple/>}/>
+        <Route path="/clients/mcdonalds" element={<McDonalds/>}/>
+        <Route path="/clients/microsoft" element={<Microsoft/>}/>
         <Route path="*" element= {<PageNotFound/>}/>
         </Routes>
       </Layout>
