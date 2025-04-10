@@ -13,6 +13,7 @@ import Clients from "./pages/Clients/Clients";
 import Apple from "./pages/Clients/components/Apple/Apple";
 import McDonalds from "./pages/Clients/components/McDonald’s/McDonald’s";
 import Microsoft from "./pages/Clients/components/Microsoft/Microsoft";
+import Lesson18 from "./lessons/Lesson18/Lesson18";
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -68,6 +69,7 @@ function App() {
         <Route path="/clients/apple" element={<Apple/>}/>
         <Route path="/clients/mcdonalds" element={<McDonalds/>}/>
         <Route path="/clients/microsoft" element={<Microsoft/>}/>
+        <Route path="/lesson18" element={<Lesson18/>}/>
         <Route path="*" element= {<PageNotFound/>}/>
         </Routes>
       </Layout>
