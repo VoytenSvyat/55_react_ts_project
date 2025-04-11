@@ -14,6 +14,8 @@ import Apple from "./pages/Clients/components/Apple/Apple";
 import McDonalds from "./pages/Clients/components/McDonald’s/McDonald’s";
 import Microsoft from "./pages/Clients/components/Microsoft/Microsoft";
 import Lesson18 from "./lessons/Lesson18/Lesson18";
+import Homework18 from "./homeworks/Homework18/Homework18";
+
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -40,6 +42,7 @@ import Lesson18 from "./lessons/Lesson18/Lesson18";
 // import Homework12 from "./homeworks/Homework12/Homework12"
 // import Homework14 from "./homeworks/Homework14/Homework14"
 // import Homework15 from "./homeworks/Homework15/Homework15"
+
 
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
@@ -70,6 +73,7 @@ function App() {
         <Route path="/clients/mcdonalds" element={<McDonalds/>}/>
         <Route path="/clients/microsoft" element={<Microsoft/>}/>
         <Route path="/lesson18" element={<Lesson18/>}/>
+        <Route path="/homework18" element={<Homework18/>}/>
         <Route path="*" element= {<PageNotFound/>}/>
         </Routes>
       </Layout>
